@@ -31,3 +31,9 @@
     background-position-x: 100rem;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .section-wavebar {
+    max-height: 80rem;
+  }
+}

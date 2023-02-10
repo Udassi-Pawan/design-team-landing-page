@@ -63,20 +63,12 @@ svg {
   align-items: flex-start;
   background-color: rgb(141, 210, 227);
   height: 14rem;
-  /* animation: ye 1s ease; */
 }
-
-/* @keyframes ye {
-  100% {
-    flex-direction: row;
-    height: 14rem;
-  }
-} */
 
 .heading {
   background-color: #fff;
   width: fit-content;
-  margin: 12rem auto 5rem;
+  margin: 10vh auto 5rem;
   font-family: "Monoton";
   font-size: 5rem;
   color: #aaa;
@@ -86,7 +78,7 @@ svg {
 }
 
 .section-customers {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -106,14 +98,14 @@ h2 {
 }
 
 .section-customers .card {
-  width: 17vw;
+  width: 25rem;
   background-color: #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 50vh;
-  padding: 2rem;
+  height: 40rem;
+  padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0.5px 0.5px 10px 0px #ccc;
   gap: 1rem;
@@ -179,7 +171,7 @@ h2 {
 }
 
 .section-team {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -280,7 +272,7 @@ h2 {
 }
 
 .section-contact {
-  min-height: 100vh;
+  max-height: 100vh;
   /* height: 100vh; */
   width: 100%;
   display: flex;
@@ -383,4 +375,58 @@ footer {
   margin: 3rem;
   font-size: 1.2rem;
   color: #888;
+}
+
+@media only screen and (max-width: 1300px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 941px) {
+  .section-customers .card {
+    max-width: 23rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .cards {
+    flex-direction: column;
+    gap: 20rem;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .image-container {
+    display: none;
+  }
+  .info {
+    width: 50rem;
+    height: 40rem;
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 598px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+@media only screen and (max-width: 511px) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media only screen and (max-width: 453px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  html {
+    font-size: 38%;
+  }
 }
